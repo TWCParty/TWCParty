@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "description": "TWCParty Official Site",
   "main": "entry.js",
-  "repository": "git@github.com:fantasywind/TWCP.git",
+  "repository": "git@github.com:fantasywind/TWCParty.git",
   "author": "Chia Yu Pai",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js"
+    "start": "webpack-dev-server --config ./webpack.config.js",
+    "build": "NODE_ENV=production webpack -p",
+    "postbuild": "docker build -t asia.gcr.io/develop-server/twcparty ."
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
