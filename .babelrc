@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": [
+          "last 2 versions"
+        ]
+      }
+    ],
+    "stage-2",
+    "react"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "transform-flow-strip-types",
+    "react-hot-loader/babel"
+  ],
+}
